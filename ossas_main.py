@@ -6,6 +6,7 @@ import Seq2Seq as rnn
 import requests
 import os
 
+print('test')
 
 states = [1, 1]
 reply_dict = [None, None]
