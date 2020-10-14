@@ -5,7 +5,7 @@ import time
 import Seq2Seq as rnn
 import requests
 import os
-import numpty
+
 
 states = [1, 1]
 reply_dict = [None, None]
