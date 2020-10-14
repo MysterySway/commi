@@ -7,6 +7,7 @@ import requests
 import os
 
 print(test)
+print('hello')
 
 states = [1, 1]
 reply_dict = [None, None]
