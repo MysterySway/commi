@@ -7,6 +7,8 @@ import requests
 import os
 
 
+print(test)
+
 states = [1, 1]
 reply_dict = [None, None]
 input_str = ['', '']
