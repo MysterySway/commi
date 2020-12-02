@@ -94,22 +94,12 @@ def sys(com_opt):
     while com_opt == 'sys':
         syscmd = input("S:\\")
         while syscmd == 'change data':
-            sysdata = input("S:\\data")
-            while sysdata == 'versionnumber':
-                print(1)
-            while sysdata == 'count':
-                print(2)
-            while sysdata == 'funzondict':
-                print(3)
-            while sysdata == 'startcommond':
-                print(4)
-            while sysdata == 'startinfo':
-                print(5)
-            if sysdata == 'exit':
-                pass
+            print()
         if syscmd == 'exit':
             break
-    print('1')
+        print('log out system.\n')
+        function_zone()
+        start_menu()
 
 
 
