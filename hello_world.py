@@ -1,4 +1,4 @@
-versionnumber = 'v0.0.0.1'
+versionnumber = 'v0.0.0.2'
 
 count = {
     'cpu':{'countname':'cpu',
@@ -83,8 +83,6 @@ def sign(com_opt):
                 print('\npassword is too short.\n')
             signpass = input('please input your count password,\nthe len only support less than 5 str. ')
             signpasslen = len(signpass)
-        signname = "'"+signname+"'"
-        signpass = "'"+signpass+"'" 
         count[signname] = {'countname':signname,'password':signpass}
         print('\nsign successful\n')
         print('have a good time.')
@@ -93,8 +91,29 @@ def sign(com_opt):
         start_menu()
 #sys
 def sys(com_opt):
-    if com_opt == 'sys':
-        
+    while com_opt == 'sys':
+        syscmd = input("S:\\")
+        while syscmd == 'change data':
+            sysdata = input("S:\\data")
+            while sysdata == 'versionnumber':
+                print(1)
+            while sysdata == 'count':
+                print(2)
+            while sysdata == 'funzondict':
+                print(3)
+            while sysdata == 'startcommond':
+                print(4)
+            while sysdata == 'startinfo':
+                print(5)
+            if sysdata == 'exit':
+                pass
+        if syscmd == 'exit':
+            break
+    print('log out system.\n')
+    function_zone()
+    start_menu()
+
+
 
 
 '''
@@ -112,6 +131,7 @@ else:
     print('\ndone,please wait a moment\n')
 log_in(com_opt)
 sign(com_opt)
+sys(com_opt)
 if com_opt == 'exit':
     pass
 
