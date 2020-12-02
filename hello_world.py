@@ -109,9 +109,7 @@ def sys(com_opt):
                 pass
         if syscmd == 'exit':
             break
-    print('log out system.\n')
-    function_zone()
-    start_menu()
+    print('1')
 
 
 
