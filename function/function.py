@@ -303,3 +303,13 @@ __import__()            #动态加载指定的类和函数
 参数name表示模块名，
 如果一个模块经常变化，就可以使用此函数，此函数相当于import module语句
 '''
+
+
+文件操作的经典做法
+采用with来保证文件的自关闭
+with open('Python\\NOTE.txt', 'w', encoding='utf-8') as f:
+    f.write('ZHE ')
+with open('NOTE.txt', 'r', encoding='utf-8') as f:
+    f.readlines()
+注意文件路径的绝对或相对
+书写相对路径时，当前文件夹也要书写
