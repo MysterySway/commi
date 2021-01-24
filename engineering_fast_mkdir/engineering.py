@@ -70,5 +70,9 @@ print('正在准备向目标文件夹中创建主体框架')
 project_name = project_name +'创建人:'              #创建人
 os.mkdir(project_name)
 
+
+
+
+
 print('创建框架完成')
 print('正在准备在文件夹中创建楼号')
